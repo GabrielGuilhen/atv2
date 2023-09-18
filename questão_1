@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+
+    inteiro paisa = 80000
+    inteiro paisb = 200000
+    real taxa_anual_a = 0.03
+    real taxa_anual_b = 0.015
+    inteiro anos = 0
+
+    enquanto(paisa <= paisb){
+      paisa+=paisa * taxa_anual_a
+      paisb+=paisb * taxa_anual_b
+      anos+=1      
+    }
+     escreva("Serão necessários ", anos, " anos para a população do país A ultrapassar ou igualar a população do país B.")
+
+
+
+
+
+    
+  }
+}
