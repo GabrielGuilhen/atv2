@@ -1,3 +1,5 @@
+Questão (A)
+
 programa {
   funcao inicio() {
     inteiro base, expoente, resultado
@@ -13,10 +15,34 @@ programa {
     {
     resultado = resultado * base
     }
-    escreva(base , " elevado a " , expoente, " é igual a " , resultado)
-
-
-
-    
+    escreva(base , " elevado a " , expoente, " é igual a " , resultado)    
   }
 }
+
+
+Questão (B)
+
+programa {
+  funcao inicio() {
+    potencia()
+  }
+  funcao potencia(){
+    
+    inteiro base, expoente, resultado
+
+    escreva("Um numero para a Base: ")
+    leia(base)
+    escreva("Um numero para o Expoente: ")
+    leia(expoente)
+
+    resultado = 1
+
+    para(inteiro i=1; i<=expoente; i=i+1)
+    {
+    resultado = resultado * base
+    }
+    escreva(base , " elevado a " , expoente, " é igual a " , resultado)
+
+  }
+}
+
