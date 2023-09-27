@@ -1,0 +1,69 @@
+Questão (A)
+
+programa {
+  funcao inicio() {
+    inteiro a , b , termo
+
+    a=0
+    b=1
+
+    escreva(a)
+    escreva(", ")
+
+    enquanto(a < 500){
+      termo = a + b
+      escreva(termo)
+
+      a=b
+      b=termo
+
+      se(termo<500){
+        escreva(", ")
+
+      }
+    }
+
+  }
+}
+
+
+
+Questão (B)
+
+
+programa {
+  funcao inicio() {
+    inteiro a , b , termo , n
+
+    a = 0
+    b = 1
+
+    escreva("Me diga um valor N (O enesimo termo): ")
+    leia(n)
+
+    se(n >= 1){
+      escreva(a)
+      
+       se(n>=2){
+         escreva(", ")
+         escreva(b)
+         
+         
+          se(n>=3){
+           escreva(", ")
+           limpa()
+
+           enquanto (n > 0){
+
+            termo = a + b
+            escreva(", ",termo)
+            
+            a=b
+            b=termo
+            n=n-1
+           }
+         }
+       }
+    }
+  }
+}
